@@ -4,7 +4,6 @@ Objective; Given a list of filenames, rename all of the files with the extension
 
 filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
 
-
 for x in filenames: # loop through input list, replace matching extension with desired extension, append new filename
     if x.endswith(".hpp"):  
         newfilename = x.replace(".hpp",".h")
