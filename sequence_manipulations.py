@@ -12,4 +12,4 @@ for x in filenames: # loop through input list, replace matching extension with d
     else:           # if filename does not need to be changed, append directly to newfilename list
         newfilenames.append(x)
 print(newfilenames) 
-# Should be ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
+# Output as expected: ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
