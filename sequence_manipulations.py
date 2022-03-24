@@ -36,4 +36,26 @@ def pig_latin(text):
   # Output as expected: 
   # print(pig_latin("hello how are you")) > ellohay owhay reaay auyay
 
-  
+"""
+  Objective: create a function that takes an octet which expresses permission values,
+             and return a string format instead (ex: permission octet of 7 is equal to "rwx")
+             which is equal to "read, write, execute" permissions for a user
+"""
+
+def octal_to_string(octal):
+    result = ""
+    value_letters = [(4,"r"),(2,"w"),(1,"x")]
+    # Iterate over each of the digits in octal
+    for i in [int(n) for n in str(octal)]:
+        # Check for each of the permissions values
+        for value, letter in value_letters:
+            if i >= value:
+                result += letter
+                i -= value
+            else:
+                result += "-"
+    return result
+
+# Output as expected: print_octal_to_string(777) > "rwxrwxrwx"
+
+
