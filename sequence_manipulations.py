@@ -61,4 +61,20 @@ def octal_to_string(octal):
 
 # Output as expected: print_octal_to_string(777) > "rwxrwxrwx"
 
+"""
+Objective: As input, accept a group name as string, and a list of string elements. Return a 
+           string which combines the group name at the beginning, colon, then the string elements.
+           To acheive this objective, I used the str.join() method, which combined the second argument
+           string elements with a comma. This was combined with the group name for the final product.
+"""
+
+def group_list(group, users):
+  members_to_string = ",".join(users)
+  return "{}: {}".format(group, members_to_string)
+
+# Input arguments: "Marketing", ["Mike","Joe"]
+# Outut: "Marketing: Mike, Joe"
+
+
+
 
