@@ -39,7 +39,10 @@ def pig_latin(text):
 """
   Objective: create a function that takes an octet which expresses permission values,
              and return a string format instead (ex: permission octet of 7 is equal to "rwx")
-             which is equal to "read, write, execute" permissions for a user
+             which is equal to "read, write, execute" permissions for a user. The input value 
+             is numeric, which is converted within a list comprehension, first, into a string and then, second,
+             into a list of octal digits (integers) which in turn is loops over (for loop) to compare 
+             values and build the return string
 """
 
 def octal_to_string(octal):
