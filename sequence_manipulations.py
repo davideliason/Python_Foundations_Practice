@@ -75,6 +75,19 @@ def group_list(group, users):
 # Input arguments: "Marketing", ["Mike","Joe"]
 # Outut: "Marketing: Mike, Joe"
 
+"""
+Objective: Read in a list of tuples with three attributes: name, age, profession. 
+           Loop through the list, and print out a custom string using those values
+"""
+
+def guest_list(guests):
+    for guest in guests:
+        name, age, profession = guest
+        print("{} is {} years old and works as {}.".format(name,age,profession))
+
+# Input guest_list([("John",30,"Pizza maker"),("Tim", 44, "Tech")])
+# Output "John is 30 years old and works as a Pizza Maker"..
+
 
 
 
