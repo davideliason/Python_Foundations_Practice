@@ -115,3 +115,20 @@ def email_list(domains):
 
 # Output: email_lists({"gmail.com": ["joe.bob", "jill.her"], "yahoo.com": ["tim.bob", "sheryl.ladd"]})
 #         Returns list as seen: ["joe.bob@gmail.com", etc]
+
+"""
+Objective: loop through dictionary and inner loop through key value pairs and create a new 
+           dictionary that recomines values
+
+def groups_per_user(group_dict):
+    user_groups = {}
+    for group, users in group_dict.items():
+        # print(group) output: local, public, administrator
+        for user in users:
+            user_groups[user] = []
+            user_groups[user].append(group)
+    return user_groups
+
+# Output: {"name_of_user": ["group1", "group2"]}
+
+
