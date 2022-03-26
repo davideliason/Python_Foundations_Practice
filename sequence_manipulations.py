@@ -101,4 +101,17 @@ for item, properties in wardrobe.items():
 # OUtput: "Red shirt", "blue shirt", ..."blue jeans", " black jeans"
 
 
+"""
+Objective: Have a parameter as single argument to a function, which includes domain names and associated 
+           lists of user. Loop through each dictionary key-value pair, and combine
+           each parent key with child values strings, to have as output valied email addresses
+"""
+def email_list(domains):
+    emails = []
+    for domain,users in domains.items():
+      for user in users:
+        emails.append("{}@{}".format(user,domain))
+    return(emails)
 
+# Output: email_lists({"gmail.com": ["joe.bob", "jill.her"], "yahoo.com": ["tim.bob", "sheryl.ladd"]})
+#         Returns list as seen: ["joe.bob@gmail.com", etc]
