@@ -89,5 +89,16 @@ def guest_list(guests):
 # Output "John is 30 years old and works as a Pizza Maker"..
 
 
+"""
+Objective: Have a dictionary with multiple key values and multiple value values associated 
+           with each key be looped through to combine each in unique output string
+"""
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for item, properties in wardrobe.items():
+    for x in properties:
+        print("This {} has {} property".format(item,x))
+
+# OUtput: "Red shirt", "blue shirt", ..."blue jeans", " black jeans"
+
 
 
