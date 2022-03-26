@@ -151,4 +151,27 @@ def format_address(address_string):
 
 # Output: format_address("123 Main St") > 123 on street named Main St
 
+"""
+Objective: count the frequency of letters in a given string. Do not count spaces, etc.append
+"""
+
+def count_letters(text):
+  result = {}
+  # Go through each letter in the text
+  for letter in text.lower():
+    # Check if the letter needs to be counted or not
+    # convert any string characters to lowercase
+    if letter.isalpha():
+    # Add or increment the value in the dictionary
+    # if the character is alphabetical, then count it
+      if not letter in result:
+        result[letter] = 1
+      else:
+        result[letter] += 1
+  return result
+
+"""
+Output: invoking the function with string "AaBbCc" > {a:2, b:2, c:2}
+"""
+
 
