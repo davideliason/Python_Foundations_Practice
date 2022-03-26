@@ -173,5 +173,3 @@ def count_letters(text):
 """
 Output: invoking the function with string "AaBbCc" > {a:2, b:2, c:2}
 """
-
-
