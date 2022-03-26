@@ -131,4 +131,24 @@ def groups_per_user(group_dict):
 
 # Output: {"name_of_user": ["group1", "group2"]}
 
+"""
+Objective: Parse a given adrgument string and seperate the numeric part of address from 
+           the text-only part of address name, then combine for output statement
+"""
+def format_address(address_string):
+    house_number = ""
+    streetname = ""
+    
+    split_address_string = address_string.split(" ")
+    for part in split_address_string:
+        if part.isdigit():
+            house_number += part
+        else:
+            streetname += " " + part
+    
+    
+    return "house # {} and street name {}".format(house_number, streetname)
+
+# Output: format_address("123 Main St") > 123 on street named Main St
+
 
