@@ -3,3 +3,6 @@ def upper_line(line):
 
 def lower_line(line):
 	return line.lower()
+
+def strip_line(line):
+	return line.strip()
