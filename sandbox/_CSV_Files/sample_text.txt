@@ -1,0 +1,3 @@
+print("sample text here")
+print("blue skies")
+print("green trees")
